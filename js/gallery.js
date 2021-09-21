@@ -53,7 +53,6 @@ function clickOnImg(event) {
     modalWindow.classList.add('is-open');
     modalImg.src = event.target.dataset.source;
     modalImg.alt = event.target.alt;
-    console.log(event.target.alt);
 }
 
 function modalClose() {
