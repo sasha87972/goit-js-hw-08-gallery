@@ -84,14 +84,14 @@ function clickLeft(imageIndex) {
     if (prevImageIndex === -1) {
     prevImageIndex = srcList.length - 1;
   }
-    modalImg.src = srcList[nextIndex].original;
-    modalImg.alt = srcList[nextIndex].description;
+    modalImg.src = srcList[prevImageIndex].original;
+    modalImg.alt = srcList[prevImageIndex].description;
 }
 function clickRight(imageIndex) {
     let nextImageIndex = imageIndex + 1;
-   if (nextImageIndex === dataSources.length) {
+   if (nextImageIndex === srcList.length) {
     nextImageIndex = 0;
   }
-    modalImg.src = srcList[nextIndex].original;
-    modalImg.alt = srcList[nextIndex].description;
+    modalImg.src = srcList[nextImageIndex].original;
+    modalImg.alt = srcList[nextImageIndex].description;
 }
